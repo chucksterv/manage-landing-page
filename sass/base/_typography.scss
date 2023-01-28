@@ -1,0 +1,36 @@
+@use "../abstracts/" as *;
+
+body {
+  font-family: $ff-default;
+  font-weight: fw(regular);
+  font-size: fs(400);
+  color: clr(neutral, 500);
+}
+
+header a {
+  color: clr(primary, 400);
+}
+
+footer a {
+  color: clr(neutral, 200);
+}
+
+h1,
+h2,
+h3 {
+  color: clr(primary, 400);
+  font-weight: fw(bold);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: fs(700);
+}
+
+h2 {
+  font-size: fs(600);
+}
+
+h3 {
+  font-size: fs(500);
+}
