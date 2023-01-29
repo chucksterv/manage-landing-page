@@ -94,6 +94,12 @@ body {
 
 header a {
   color: hsl(228deg, 39%, 23%);
+  transition: 150ms color ease-in-out;
+}
+@media screen and (max-width: 50em) {
+  header a:is(:hover, :focus) {
+    color: hsl(12deg, 88%, 59%);
+  }
 }
 
 footer a {
@@ -124,6 +130,39 @@ body {
   background-color: hsl(0deg, 0%, 98%);
 }
 
+header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .button {
+  display: none;
+}
+@media screen and (max-width: 50em) {
+  header .nav {
+    display: none;
+    position: fixed;
+    inset: 6rem 1rem auto;
+    background-color: hsl(0deg, 0%, 100%);
+    border-radius: 0.25rem;
+    padding: 1.75rem;
+  }
+  header .nav[data-visible] {
+    display: block;
+  }
+  header .nav__list {
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+  }
+  header[data-overlay]::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  }
+}
+
 .button {
   cursor: pointer;
   border-radius: 100vmax;
@@ -146,6 +185,21 @@ body {
 }
 .button[data-type=inverted]:is(:hover, :focus) {
   color: hsl(12deg, 88%, 79%);
+}
+
+.mobile-nav-toggle {
+  display: none;
+}
+@media screen and (max-width: 50em) {
+  .mobile-nav-toggle {
+    display: block;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+  }
+  .mobile-nav-toggle .icon-close {
+    display: none;
+  }
 }
 
 .clr-primary-400 {

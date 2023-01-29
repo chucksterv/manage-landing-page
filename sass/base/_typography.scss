@@ -9,6 +9,13 @@ body {
 
 header a {
   color: clr(primary, 400);
+  transition: 150ms color ease-in-out;
+
+  @include mqmax(md) {
+    &:is(:hover, :focus) {
+      color: clr(accent, 400);
+    }
+  }
 }
 
 footer a {

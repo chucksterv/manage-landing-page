@@ -28,34 +28,40 @@
   </head>
 
   <body>
-    <header>
+    <header class="padding-block-10">
       <div class="container">
-        <img src="/images/logo.svg" alt="manage logo" />
-        <button class="mobile-nav-toggle" aria-controls="primary-navigation">
-          <img
-            class="icon-hamburger"
-            src="/images/icon-hamburger.svg"
-            aria-hidden="true"
-            alt=""
-          />
-          <img
-            class="icon-close"
-            src="/images/icon-close.svg"
-            aria-hidden="true"
-            alt=""
-          />
-          <span class="sr-only">Menu</span>
-        </button>
-        <nav class="nav">
-          <ul class="nav__list | fw-semi-bold" id="primary-navigation">
-            <li class="nav__item"><a href="#">Pricing</a></li>
-            <li class="nav__item"><a href="#">Product</a></li>
-            <li class="nav__item"><a href="#">About Us </a></li>
-            <li class="nav__item"><a href="#">Careers</a></li>
-            <li class="nav__item"><a href="#">Community</a></li>
-          </ul>
-        </nav>
-        <button class="button">Get Started</button>
+        <div class="wrapper">
+          <img src="/images/logo.svg" alt="manage logo" />
+          <button
+            class="mobile-nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <img
+              class="icon-hamburger"
+              src="/images/icon-hamburger.svg"
+              aria-hidden="true"
+              alt=""
+            />
+            <img
+              class="icon-close"
+              src="/images/icon-close.svg"
+              aria-hidden="true"
+              alt=""
+            />
+            <span class="sr-only">Menu</span>
+          </button>
+          <nav class="nav" id="primary-navigation">
+            <ul class="nav__list | fw-semi-bold">
+              <li class="nav__item"><a href="#">Pricing</a></li>
+              <li class="nav__item"><a href="#">Product</a></li>
+              <li class="nav__item"><a href="#">About Us </a></li>
+              <li class="nav__item"><a href="#">Careers</a></li>
+              <li class="nav__item"><a href="#">Community</a></li>
+            </ul>
+          </nav>
+          <button class="button">Get Started</button>
+        </div>
       </div>
     </header>
 

@@ -1,0 +1,41 @@
+@use "../abstracts/" as *;
+
+header {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .button {
+    display: none;
+  }
+
+  @include mqmax(md) {
+    .nav {
+      display: none;
+      position: fixed;
+      inset: size(13) size(4) auto;
+      background-color: clr(neutral, 100);
+      border-radius: size(1);
+      padding: size(7);
+
+      &[data-visible] {
+        display: block;
+      }
+
+      &__list {
+        display: grid;
+        gap: size(4);
+        text-align: center;
+      }
+    }
+
+    &[data-overlay]::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image: linear-gradient(rgb(0 0 0 / 0), rgb(0 0 0 / 0.7));
+    }
+  }
+}
