@@ -3,8 +3,10 @@
 .mobile-nav-toggle {
   display: none;
 
-  @include mqmax(md) {
+  @include mqmax(799px) {
     display: block;
+    position: fixed;
+    right: size(4);
     cursor: pointer;
     background-color: transparent;
     border: none;
