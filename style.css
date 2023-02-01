@@ -183,6 +183,10 @@ header .nav__list {
   }
 }
 
+.why-us__features li {
+  margin-bottom: 3rem;
+}
+
 .button {
   cursor: pointer;
   display: inline-flex;

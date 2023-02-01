@@ -1,0 +1,9 @@
+@use "../abstracts/" as *;
+
+.why-us {
+  &__features {
+    li {
+      margin-bottom: 3rem;
+    }
+  }
+}
