@@ -41,3 +41,13 @@ h2 {
 h3 {
   font-size: fs(500);
 }
+
+p:not([class]) {
+  max-width: 32ch;
+}
+
+.why-us__features {
+  p {
+    max-width: 42ch;
+  }
+}

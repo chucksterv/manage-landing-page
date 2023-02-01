@@ -126,6 +126,14 @@ h3 {
   font-size: 1.125rem;
 }
 
+p:not([class]) {
+  max-width: 32ch;
+}
+
+.why-us__features p {
+  max-width: 42ch;
+}
+
 body {
   background-color: hsl(0deg, 0%, 98%);
 }
