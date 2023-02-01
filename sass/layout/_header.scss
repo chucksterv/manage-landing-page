@@ -5,6 +5,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: size(2);
   }
 
   .button {
@@ -17,7 +18,7 @@ header {
 
   .nav__list {
     display: flex;
-    gap: clamp(size(5), 4vw, size(10));
+    gap: clamp(size(3), 3vw, size(10));
   }
   @include mqmax(799px) {
     .nav {

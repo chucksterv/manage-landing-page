@@ -134,6 +134,7 @@ header .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0.5rem;
 }
 header .button {
   display: none;
@@ -145,7 +146,7 @@ header .button {
 }
 header .nav__list {
   display: flex;
-  gap: clamp(1.25rem, 4vw, 3rem);
+  gap: clamp(0.75rem, 3vw, 3rem);
 }
 @media screen and (max-width: 49.9375em) {
   header .nav {
@@ -1131,4 +1132,8 @@ header .nav__list {
 }
 .padding-inline-15 {
   padding-inline: 10rem;
+}
+
+.flow :not(:first-child) {
+  margin-top: var(--flow-spacer, 3em);
 }/*# sourceMappingURL=style.css.map */
