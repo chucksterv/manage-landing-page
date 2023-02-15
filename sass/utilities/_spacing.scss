@@ -4,6 +4,14 @@
   margin-inline: auto;
 }
 
+.mx-left {
+  margin-inline: auto;
+}
+
+.mx-right {
+  margin-inline: auto;
+}
+
 @each $variant, $value in $sizes {
   .margin {
     &-#{$variant} {

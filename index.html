@@ -31,7 +31,11 @@
     <header class="padding-block-10">
       <div class="container">
         <div class="wrapper">
-          <img src="/images/logo.svg" alt="manage logo" />
+          <a href="#">
+            <svg class="logo" width="146" height="24">
+              <use xlink:href="./images/logo.svg#logo"></use>
+            </svg>
+          </a>
           <button
             class="mobile-nav-toggle"
             aria-controls="primary-navigation"
@@ -75,7 +79,7 @@
                 Manage makes it simple for software teams to plan day-to-day
                 tasks while keeping the larger team goals in view.
               </p>
-              <button class="button">Get Started</button>
+              <button class="button mx-left">Get Started</button>
             </div>
             <div class="hero__img">
               <img src="/images//illustration-intro.svg" alt="" />
@@ -145,39 +149,68 @@
       </section>
     </main>
 
-    <footer class="bg-neutral-700 | padding-block-10">
+    <footer class="primary-footer | bg-neutral-700 padding-block-10">
       <div class="container">
-        <div class="even-columns">
+        <div class="footer-wrapper">
           <div class="social-links">
-            <a href="#"><img src="/images/logo.svg" alt="Manage Logo" /></a>
-            <ul role="list" aria-label="social-links">
+            <a href="#" aria-label="home">
+              <svg class="logo" width="146" height="24">
+                <use xlink:href="./images/logo.svg#logo"></use>
+              </svg>
+            </a>
+            <ul
+              role="list"
+              aria-label="social-links"
+              class="social-links__list"
+            >
               <li>
-                <a href="#" aria-label="facebook"
-                  ><img src="/images/icon-facebook.svg" alt="facebook"
-                /></a>
+                <a href="#" aria-label="facebook">
+                  <svg class="social-icon">
+                    <use
+                      xlink:href="./images/social-icons.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#" aria-label="youtube"
-                  ><img src="/images/icon-youtube.svg" alt="youtube"
-                /></a>
+                <a href="#" aria-label="youtube">
+                  <svg class="social-icon">
+                    <use
+                      xlink:href="./images/social-icons.svg#icon-youtube"
+                    ></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#" aria-label="twitter"
-                  ><img src="/images/icon-twitter.svg" alt="twitter"
-                /></a>
+                <a href="#" aria-label="twitter">
+                  <svg class="social-icon">
+                    <use
+                      xlink:href="./images/social-icons.svg#icon-twitter"
+                    ></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#" aria-label="pinterest"
-                  ><img src="/images/icon-pinterest.svg" alt="pinterest"
-                /></a>
+                <a href="#" aria-label="pinterest">
+                  <svg class="social-icon">
+                    <use
+                      xlink:href="./images/social-icons.svg#icon-pinterest"
+                    ></use>
+                  </svg>
+                </a>
               </li>
               <li>
-                <a href="#" aria-label="instagram"
-                  ><img src="/images/icon-instagram.svg" alt="instagram"
-                /></a>
+                <a href="#" aria-label="instagram">
+                  <svg class="social-icon">
+                    <use
+                      xlink:href="./images/social-icons.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
+
           <div class="site-map">
             <ul>
               <li><a href="#">Home</a></li>
@@ -189,10 +222,11 @@
               <li><a href="#">Privacy Policy</a></li>
             </ul>
           </div>
+
           <div class="form">
             <form action="">
               <input type="email" name="email" id="email" />
-              <button class="button">Go</button>
+              <button class="button" data-glow="no-glow">Go</button>
             </form>
             <p>Copyright 2020. All Rights Reserved</p>
           </div>

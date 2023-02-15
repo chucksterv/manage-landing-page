@@ -1,0 +1,27 @@
+@use "../abstracts/" as *;
+
+.cta {
+  background-image: url(../../images/bg-simplify-section-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+
+  @include mq(md) {
+    background-image: url(../../images/bg-simplify-section-desktop.svg);
+    background-size: cover;
+  }
+
+  text-align: center;
+
+  button {
+    margin-inline: auto;
+  }
+
+  @include mq(md) {
+    text-align: left;
+
+    button {
+      margin-inline: 0;
+      margin-left: auto;
+    }
+  }
+}
